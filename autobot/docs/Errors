@@ -1,0 +1,32 @@
+
+Erro 1: variaveis da classe Autobot estavam publicas e nao estavam encapsulados,
+entao era possivel alterar o valor de suas variaveis.
+
+Solucao 1: as variaveis foram definidas como privadas e foi feito o
+encapsulamento destas variaveis(Criacao dos getters e setter).
+
+
+
+Erro 2: variaveis da classe Autobot e parametros/metodos da classe GerenciadorAutobots
+estava com nomes estranhos e de dificil entendimento.
+
+Solucao 2: substituir esses nomes por nomes que fazem mais sentido para o contexto do programa.
+
+
+
+Erro 3: o loop for do metodo CalcularEnergonTotal() da classe GerenciadorAutobots estava passando
+um indice amais e disparando a exception IndexOutOfBoundsException.
+
+Solucao 3: foi retirado o = da regra do for, como no exemplo1:(i < lista.size()),
+mas tambem poderia ter sido resolvido removendo um indice do size com -1 como no exemplo2:(i <= lista.size() -1)
+
+
+
+Erro 4: no metodo RepararAutobot da classe GerenciadorAutobots quando desse erro e try pegasse,
+nao tinha a mensagem de o que era o erro e nem qual a exception estava disparando.
+
+Solucao 4: dentro do catch foi feito o system.out.print para mostrar uma mensagem de erro e a exception disparada
+
+
+
+Erro 5: no metodo buscarNomeAutobot
